@@ -1,21 +1,21 @@
-# 🤖 RAG-Based Document Chatbot
+# RAG-Based Document Chatbot
 
 A Retrieval-Augmented Generation (RAG) chatbot that lets you upload PDF documents and ask questions about them. Built with Groq LLaMA 3.3, ChromaDB, and Streamlit.
 
 ---
 
-## 🌟 Features
+## Features
 
-- 📄 Upload one or multiple PDF documents
-- 🔍 Semantic search using sentence-transformers embeddings
-- 🧠 Conversational memory — remembers previous questions in the session
-- 📎 Source citations — shows exactly which document and page the answer came from
-- ⚡ Fast responses powered by Groq's LLaMA 3.3 70B model
-- 🖥️ Clean, interactive UI built with Streamlit
+- Upload one or multiple PDF documents
+- Semantic search using sentence-transformers embeddings
+- Conversational memory — remembers previous questions in the session
+- Source citations — shows exactly which document and page the answer came from
+- Fast responses powered by Groq's LLaMA 3.3 70B model
+- Clean, interactive UI built with Streamlit
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 User Question
@@ -35,7 +35,7 @@ ChromaDB Vector Store ──► Top-4 Relevant Chunks
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -48,7 +48,7 @@ ChromaDB Vector Store ──► Top-4 Relevant Chunks
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Python 3.10 or higher
@@ -96,7 +96,7 @@ Open your browser at `http://localhost:8501`
 
 ---
 
-## 💡 How to Use
+## How to Use
 
 1. Upload one or more PDF files using the sidebar
 2. Click **Process Documents** and wait for the embeddings to load
@@ -106,7 +106,7 @@ Open your browser at `http://localhost:8501`
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 rag-chatbot/
@@ -121,7 +121,7 @@ rag-chatbot/
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
 - [ ] Hybrid search (vector + keyword BM25)
 - [ ] Deploy to Hugging Face Spaces for public access
@@ -131,13 +131,13 @@ rag-chatbot/
 
 ---
 
-## 👤 Author
+## Author
 
 **Prathi Asheka**
 - GitHub: [@PrathiAsheka](https://github.com/PrathiAsheka)
 
 ---
 
-## 📄 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
