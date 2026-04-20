@@ -11,7 +11,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("🤖 RAG-Based Chatbot")
+st.title(" Study Guider")
 st.markdown("Upload your documents and ask questions about them!")
 
 # Initialize pipeline in session state
@@ -31,7 +31,7 @@ with st.sidebar:
         accept_multiple_files=True
     )
 
-    if uploaded_files and st.button("🚀 Process Documents", use_container_width=True):
+    if uploaded_files and st.button(" Process Documents", use_container_width=True):
         with st.spinner("Processing documents..."):
             # Save uploaded files temporarily
             temp_paths = []
@@ -48,7 +48,7 @@ with st.sidebar:
             st.session_state.documents_loaded = True
             st.session_state.chat_history = []
 
-        st.success(f"✅ Loaded {len(uploaded_files)} document(s)!")
+        st.success(f" Loaded {len(uploaded_files)} document(s)!")
 
     if st.session_state.documents_loaded:
         st.divider()
@@ -65,12 +65,12 @@ with st.sidebar:
     2. Documents are chunked & embedded
     3. Ask questions in the chat
     4. Relevant chunks are retrieved
-    5. LLM generates a grounded answer
+    5. It generates a grounded answer
     """)
 
 # Main chat area
 if not st.session_state.documents_loaded:
-    st.info("👈 Upload documents in the sidebar to get started.")
+    st.info(" Upload documents in the sidebar to get started.")
 else:
     # Display chat history
     for message in st.session_state.chat_history:
